@@ -1,15 +1,14 @@
-import { Config } from "../Config"
-import { MenuItem } from "../MenuItem"
-import { NuevaEntrada } from "../NuevaEntrada"
-import { NuevoGasto } from "../NuevoGasto"
-import { Reportes } from "../Reportes"
+import { ScreenConfig } from "../ScreenConfig"
+import { Button } from "../Button"
+import { ScreenGasto } from "../ScreenGasto"
+import { ScreenReportes } from "../ScreenReportes"
 import './MainMenu.css'
+import { ScreenIngreso } from "../ScreenIngreso"
 
-export const MainMenu = ({cambiarElementos,setActualScreen, location, setTitleScreen }) => {
+export const Menu = ({cambiarElementos,setActualScreen, location, setTitleScreen }) => {
   return (
-    <div className="mainMenu"> 
       <div className="selector"> 
-        <MenuItem
+        <Button
           btnTitle='Nuevo Ingreso'
           btnColor='var(--celeste)'
           img='/ldm.svg'
@@ -17,9 +16,9 @@ export const MainMenu = ({cambiarElementos,setActualScreen, location, setTitleSc
           cambiarElementos={cambiarElementos}
           location = {location}
           setTitleScreen = {setTitleScreen}
-          destinoScreen={<NuevaEntrada cambiarElementos={cambiarElementos} setActualScreen={setActualScreen} />}
+          destinoScreen={<ScreenIngreso cambiarElementos={cambiarElementos} setActualScreen={setActualScreen} />}
         />
-        <MenuItem
+        <Button
           btnTitle='Nuevo Gasto'
           btnColor='var(--verde)'
           img='/at.svg'
@@ -27,9 +26,9 @@ export const MainMenu = ({cambiarElementos,setActualScreen, location, setTitleSc
           cambiarElementos={cambiarElementos}
           location = {location}
           setTitleScreen = {setTitleScreen}
-          destinoScreen={<NuevoGasto cambiarElementos={cambiarElementos} setActualScreen={setActualScreen} />}
+          destinoScreen={<ScreenGasto cambiarElementos={cambiarElementos} setActualScreen={setActualScreen} />}
         />
-        <MenuItem
+        <Button
           btnTitle='Reportes'
           btnColor='var(--rojo)'
           img='/nt.svg'
@@ -37,9 +36,9 @@ export const MainMenu = ({cambiarElementos,setActualScreen, location, setTitleSc
           cambiarElementos={cambiarElementos}
           location = {location}
           setTitleScreen = {setTitleScreen}
-          destinoScreen={<Reportes cambiarElementos={cambiarElementos} setActualScreen={setActualScreen} />}
+          destinoScreen={<ScreenReportes cambiarElementos={cambiarElementos} setActualScreen={setActualScreen} />}
         />
-        <MenuItem
+        <Button
           btnTitle='Config'
           btnColor='var(--amarillo)'
           img='/dyc.svg'
@@ -47,9 +46,8 @@ export const MainMenu = ({cambiarElementos,setActualScreen, location, setTitleSc
           cambiarElementos={cambiarElementos}
           location = {location}
           setTitleScreen = {setTitleScreen}
-          destinoScreen={<Config cambiarElementos={cambiarElementos} setTitleScreen={setTitleScreen} setActualScreen={setActualScreen} />}
+          destinoScreen={<ScreenConfig cambiarElementos={cambiarElementos} setTitleScreen={setTitleScreen} setActualScreen={setActualScreen} />}
         />
       </div>
-    </div>
   )
 }
