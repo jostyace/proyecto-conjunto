@@ -8,10 +8,16 @@
 }
 
 .nombreCat {
-  font-size: 12px !important;
+  font-size: 14px !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  color: var(--amarillo);
 }
 .montoCat {
-  font-size: 12px !important;
+  font-size: 14px !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  color: var(--amarillo);
 }
 
 .inputCat {

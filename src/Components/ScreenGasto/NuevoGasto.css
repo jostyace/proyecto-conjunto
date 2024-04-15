@@ -1,12 +1,5 @@
 .nuevaEntrada {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
-  padding: 30px 0px;
+  gap: 20px;
 }
 .descripcionNueva {
   width: 80%;
@@ -57,17 +50,5 @@
   outline: none !important;
 }
 .optionsClass {
-  width: 90%;
-  height: 20%;
-}
-
-.tituloNueva {
   width: 80%;
-  height: 40px;
-  outline: none;
-  border: 2px solid var(--amarillo);
-  border-radius: 19px;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-size: 13px;
 }

@@ -1,4 +1,4 @@
-export const MenuHeader = () => {
+export const Saldo = () => {
   return (
     <>
         <h1 className='titulo'>Control de Ingresos y Gastos</h1>

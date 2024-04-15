@@ -1,6 +1,5 @@
-import { NuevaEntrada } from '../NuevaEntrada'
 import './MenuItem.css'
-export const MenuItem = ({btnTitle, btnColor, img, setActualScreen, cambiarElementos, location, setTitleScreen, destinoScreen }) => {
+export const Button = ({btnTitle, btnColor, img, setActualScreen, cambiarElementos, location, setTitleScreen, destinoScreen }) => {
   const handleClick = () => {
     cambiarElementos()
     setTitleScreen(btnTitle)
